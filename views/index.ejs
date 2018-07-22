@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>LearnJS</title>
+		<link rel="stylesheet" href="css/main.css">
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Java Script на практиці</h1>
+		</header>
+
+		<section id="summa">
+			<div class="up">
+				<h2>Додавання, віднімання, множення, ділення</h2>
+			</div> 
+			<div class="down">
+				<div class="addition">
+					<h3>Додавання</h3>
+					<form name="addition_form" action="">
+						<input type="text" id="num_1_plus">
+						<p class="sign">+</p>
+						<input type="text" id="num_2_plus">
+						<p class="sign">=</p>
+						<div class="pos_result">
+							<div id="result_plus"></div>
+						</div>
+						<input type="button" value="Enter" onclick="addition();">
+					</form>
+				</div>
+
+				<div class="subtraction">
+					<h3>Віднімання</h3>
+					<form name="subtraction_form" action="">
+						<input type="text" id="num_1_minus">
+						<p class="sign">-</p>
+						<input type="text" id="num_2_minus">
+						<p class="sign">=</p>
+						<div class="pos_result">
+							<div id="result_minus"></div>
+						</div>
+						<input type="button" value="Enter" onclick="subtraction();">
+					</form>
+				</div>
+
+				<div class="multimplication">
+					<h3>Множення</h3>
+					<form name="multimplication_form" action="">
+						<input type="text" id="num_1_mn">
+						<p class="sign">*</p>
+						<input type="text" id="num_2_mn">
+						<p class="sign">=</p>
+						<div class="pos_result">
+							<div id="result_mn"></div>
+						</div>
+						<input type="button" value="Enter" onclick="multimplication();">
+					</form>
+				</div>
+
+				<div class="division">
+					<h3>Ділення</h3>
+					<form name="division_form" action="">
+						<input type="text" id="num_1_div">
+						<p class="sign">/</p>
+						<input type="text" id="num_2_div">
+						<p class="sign">=</p>
+						<div class="pos_result">
+							<div id="result_div"></div>
+						</div>
+						<input type="button" value="Enter" onclick="division();">
+					</form>
+				</div>
+
+				<div class="all">
+					<h3>Все разом</h3>
+					<form name="all_form">
+						<input type="text" id="num_1_all">
+						<input type="text" id="num_0_all" name="num_0_all">
+						<input type="text" id="num_2_all">
+						<p class="sign">=</p>
+						<div class="pos_result">
+							<div id="result_all"></div>
+						</div>
+						<input type="button" value="Enter" onclick="validateform();">
+					</form>
+				</div>
+			</div>
+		</section >
+			
+
+		<section id="about_me">
+			<div class="up">
+				<h2>Про себе</h2>
+			</div>
+
+			<div class="down">
+
+				<div class="name">
+					<div class="left_about">
+						<h4>Твоє ім'я:</h4>
+					</div>
+					<div class="right_about">
+						<form name="name">
+							<input type="text" id="text_1_name">
+						</form>
+					</div>
+				</div>
+
+				<div class="last_name">
+					<div class="left_about">
+						<h4>Твоє прізвище:</h4>
+					</div>
+					<div class="right_about">
+						<form name="last_name">
+							<input type="text" id="text_1_lastName">
+						</form>
+					</div>
+				</div>
+
+				<div class="age">
+					<div class="left_about">
+						<h4>Вік:</h4>
+					</div>
+					<div class="right_about">
+						<form name="age">
+							<input type="text" id="text_1_age">
+						</form>
+					</div>
+				</div>
+
+				<div class="sex">
+					<div class="left_about">
+						<h4>Стать:</h4>
+					</div>
+					<div class="right_about">
+						<form name="sex">
+							<input type="text" id="text_1_sex">
+						</form>
+					</div>
+				</div>
+
+				<div class="mood">
+					<div class="left_about">
+						<h4>Настрій:</h4>
+					</div>
+					<div class="right_about">
+						<form name="mood">
+							<input type="text" id="text_1_mood">
+						</form>
+					</div>
+				</div>
+
+				<div class="button_about">
+					<form action="">
+						<input type="button" value="Enter" onclick="name_button();">
+					</form>
+				</div>
+
+				<div id="result_text_aboutMe">
+					
+				</div>
+			</div>
+		</section>
+
+		<section id="comparison">
+			<div class="up">
+				<h2>Порівняння</h2>
+			</div>
+
+			<div class="down">
+				
+				<div class="more">
+					<h3>Більше?</h3>
+					<form name="more">
+						<input type="text" id="num_1_more">
+						<p class="sign">></p>
+						<input type="text" id="num_2_more">
+						<p class="sign">=</p>
+						<div class="pos_result">
+							<div id="result_more"></div>
+						</div>
+						<input type="button" value="Enter" onclick="moreForm();">
+					</form>
+				</div>
+
+				<div class="less">
+					<h3>Менше?</h3>
+					<form name="less">
+						<input type="text" id="num_1_less">
+						<p class="sign"><</p>
+						<input type="text" id="num_2_less">
+						<p class="sign">=</p>
+						<div class="pos_result">
+							<div id="result_less"></div>
+						</div>
+						<input type="button" value="Enter" onclick="lessForm();">
+					</form>
+				</div>
+
+				<div class="equals">
+					<h3>Рівне?</h3>
+					<form name="equals">
+						<input type="text" id="num_1_equals">
+						<p class="sign">=</p>
+						<input type="text" id="num_2_equals">
+						<p class="sign">=</p>
+						<div class="pos_result">
+							<div id="result_equals"></div>
+						</div>
+						<input type="button" value="Enter" onclick="equalsForm();">
+					</form>
+				</div>
+
+				<div class="all_comparison">
+					<h3>Все разом</h3>
+					<form name="all_comparison">
+						<input type="text" id="num_1_all_comparison">
+						<input type="text" id="num_0_all_comparison">
+						<input type="text" id="num_2_all_comparison">
+						<p class="sign">=</p>
+						<div class="pos_result">
+							<div id="result_all_comparison"></div>
+						</div>
+						<input type="button" value="Enter" onclick="all_comparisonForm();">
+					</form>
+				</div>
+
+				<div class="num_letters">
+					<h3>Кількість букв</h3>
+					<form name="num_letters">
+						<input type="text" id="num_1_num_letters">
+						<input type="text" id="num_0_num_letters">
+						<input type="text" id="num_2_num_letters">
+						<p class="sign">=</p>
+						<div class="pos_result">
+							<div id="result_num_letters"></div>
+						</div>
+						<input type="button" value="Enter" onclick="num_lettersForm();">
+					</form>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="ofter">
+			<div class="up">
+				<h2>Різне</h2>
+			</div>
+
+			<div class="down">
+				<div class="numbers">
+					<h3>Вивести числа(0-100) які діляться на:</h3>
+					<form name="num_numbers">
+						<input type="text" id="num_1_numbers">
+						<input type="button" value="Enter" onclick="numbersForm();">
+					</form>
+				</div>
+				<div id="result_numbers" name="result_numbers2" class="result_numbers3">
+
+				</div>
+				
+
+
+				<div id="calculation">
+					<div>
+						<h5>Калькулятор</h5>
+
+						<form name="calculation" class="height">
+							
+							<div id="inputString"></div>
+							
+							<input type="button" id="+" value="+" onclick="plusForm();">
+							<input type="button" id="-" value="-" onclick="minusForm();">
+							<input type="button" id="*" value="&#215" onclick="mnForm();">
+							<input type="button" id="/" value="&#247" onclick="divForm();">
+							<input type="button" id="7" value="7" onclick="sevenForm();">
+							<input type="button" id="8" value="8" onclick="eightForm();">
+							<input type="button" id="9" value="9" onclick="nineForm();">
+							<input type="button" id="0" value="0" onclick="zeroForm();">
+							<input type="button" id="4" value="4" onclick="fourForm();">
+							<input type="button" id="5" value="5" onclick="fiveForm();">
+							<input type="button" id="6" value="6" onclick="sixForm();">
+							<input id="input_result" type="button" value="=" onclick="calculationForm()">
+							<input type="button" id="triger" value="00">
+							<input type="button" id="1" value="1" onclick="oneForm();">
+							<input type="button" id="2" value="2" onclick="twoForm();">
+							<input type="button" id="3" value="3" onclick="threeForm();">
+							<input type="button" id="triger2" value="00">
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

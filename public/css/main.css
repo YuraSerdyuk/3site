@@ -1,0 +1,303 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	height: 220px;
+	background-color: #c4c4c4;
+}
+
+h1 {
+	font-family: Century Gothic;
+	font-size: 50px;
+	font-weight: 400;
+	color: black;
+	text-align: center;
+	padding: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ПОЧАТОК ПЕРШОГО КОНТЕЙНЕРА */
+
+#summa {
+	height: 1050px;
+}
+
+.up {
+	height: 120px;
+	background-color: #f3f3f3;
+}
+
+h2 {
+	font-family: Century Gothic;
+	font-size: 33px;
+	font-weight: 400;
+	color: black;
+	text-align: center;
+	padding: 40px;
+}
+
+h3 {
+	font-family: Century Gothic;
+	font-size: 22px;
+	font-weight: 400;
+	color: black;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+.addition, .subtraction, .multimplication, .division, .all {
+	height: 135px;
+}
+
+form {
+	text-align: center;
+}
+
+input {
+	width: 100px;
+	height: 33px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.pos_result {
+	width: 100px;
+	height: 36px;
+	border: 0.5px solid black;
+	display: inline-block;
+	position: relative;
+	top: 14px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#result_plus, #result_minus, #result_mn, #result_div, #result_all {
+	position: absolute;
+	width: 100%;
+	top: 30%;
+}
+
+.sign {
+	display: inline;
+}
+
+#num_0_all {
+	width: 33px;
+	height: 33px;
+}
+
+#num_1_all, #num_2_all, #num_0_all {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#num_2_all {
+	margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ПОЧАТОК ДРУГОГО КОНТЕЙНЕРА  */
+
+#about_me {
+	height: 985px;
+}
+
+h4 {
+	font-family: Century Gothic;
+	font-size: 22px;
+	font-weight: 400;
+	color: black;
+	float: right;
+	margin-top: 35px;
+	margin-right: 10px;
+	margin-bottom: 35px;
+}
+
+.name {
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+
+#text_1_name, #text_1_lastName {
+	text-transform: capitalize;
+}
+
+.last_name, .age, .sex {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.left_about {
+	width: 50%;
+	float: left;
+}
+
+.right_about {
+	width: 50%;
+	float: right;
+}
+
+.right_about form {
+	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+}
+
+.button_about form input {
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+
+#result_text_aboutMe {
+	padding: 20px;
+	width: 50%;
+	height: 50px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+
+
+
+
+/* ПОЧАТОК ТРЕТЬОГО КОНТЕЙНЕРА */
+
+.more, .less, .equals, .all_comparison, .num_letters {
+	height: 135px;
+}
+
+#result_more, #result_less, #result_equals, #result_all_comparison, #result_num_letters {
+	position: absolute;
+	width: 100%;
+	top: 30%;
+}
+
+#num_1_all_comparison, #num_2_all_comparison, #num_0_all_comparison, #num_1_num_letters, #num_2_num_letters, #num_0_num_letters {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#num_0_all_comparison, #num_0_num_letters {
+	width: 33px;
+	height: 33px;
+}
+
+
+
+
+
+/* ПОЧАТОК ЧЕТВЕРТОГО КОНТЕЙНЕРА */
+
+#ofter .up {
+	margin-top: 60px;
+}
+
+#ofter {
+	height: 500px;
+}
+
+#ofter .down {
+	margin-top: 70px;
+}
+
+.numbers {
+	height: 135px;
+}
+
+#result_numbers {
+	padding: 20px;
+	width: 50%;
+	height: 50px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+
+
+
+
+
+#calculation {
+	height: 600px;
+	margin-top: 150px;
+}
+
+h5 {
+	font-family: Century Gothic;
+	font-size: 33px;
+	font-weight: 400;
+	color: black;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+.height {
+	width: 360px;
+	margin: auto;
+}
+
+#inputString {
+	width: 300px;
+	height: 40px;
+	font-family: Century Gothic;
+	font-size: 33px;
+	font-weight: 400;
+	color: black;
+	border: 0.5px solid black;
+	text-align: right;
+	margin: auto;
+}
+
+#inputString {
+	padding: 5px;
+}
+
+#input_result {
+	width: 50px;
+	height: 133px;
+	margin: 16.5px;
+	position: absolute;
+}
+
+.height input {
+	width: 50px;
+	height: 50px;
+	margin: 16.5px;
+	cursor: pointer;
+	background-color: white;
+	border-style: none;
+	border: 0.5px solid black;
+	font-family: Century Gothic;
+	font-size: 33px;
+	font-weight: 400;
+	color: black;
+	text-align: center;
+}
+
+.height form {
+	text-align: unset;
+}

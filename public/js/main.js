@@ -208,6 +208,9 @@ function calculationForm() {
 	defineOperationsData(pairsArray, operationsArray);
 	result = executeHighestPriorityOperation(pairsArray);
 	console.log('final:', result);
+
+	document.getElementById("inputString").innerHTML = '';
+	document.getElementById("inputString").innerHTML += result;
 }
 
 function executeHighestPriorityOperation(pairsArray) {
